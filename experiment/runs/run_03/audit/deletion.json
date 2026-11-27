@@ -1,0 +1,58 @@
+{
+  "after": [
+    {
+      "exists": false,
+      "file": "training.json"
+    },
+    {
+      "exists": false,
+      "file": "validation.json"
+    }
+  ],
+  "audit_archive_keeps_observation_values": true,
+  "before": [
+    {
+      "exists": true,
+      "file": "training.json",
+      "sha256": "ee74ea86675597def2cfc4f4e55228e60c11991e89f5c581ab829459c0a1a310"
+    },
+    {
+      "exists": true,
+      "file": "validation.json",
+      "sha256": "d9bb4f4534a4f94000cdb446c3ab8f2bcbc85d48ca6e485da6075e8bff74090c"
+    }
+  ],
+  "claim": "execution independent of observations; not global secure erasure",
+  "execution_file_allowlist_after_task_injection": [
+    "registry.json",
+    "runtime.py",
+    "tasks.json"
+  ],
+  "input_directory_empty": true,
+  "reproduction_fixture_kept_outside_runtime": "data/observations.json",
+  "scope": "run input files and exited learner/validator process memory",
+  "state_after": {
+    "registered_instance_count": 3,
+    "registered_type_names": [
+      "Type_1"
+    ],
+    "runtime_files": [
+      "registry.json"
+    ],
+    "training_observations_in_input_files": 0,
+    "validation_observations_in_input_files": 0
+  },
+  "state_before": {
+    "registered_instance_count": 3,
+    "registered_type_names": [
+      "Type_1"
+    ],
+    "runtime_files": [
+      "registry.json"
+    ],
+    "training_observations_in_input_files": 6,
+    "validation_observations_in_input_files": 3
+  },
+  "training_process_exited": true,
+  "validation_process_exited": true
+}

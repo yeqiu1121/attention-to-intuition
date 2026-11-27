@@ -1,0 +1,41 @@
+{
+  "file_accesses": [
+    {
+      "allowed": true,
+      "file": "registry.json",
+      "mode": "read"
+    },
+    {
+      "allowed": true,
+      "file": "tasks.json",
+      "mode": "read"
+    },
+    {
+      "allowed": true,
+      "file": "result.json",
+      "mode": "write"
+    }
+  ],
+  "raw_observation_reads": 0,
+  "results": [
+    {
+      "duration": "7",
+      "instance": "v1",
+      "type": "Distance",
+      "value": "14"
+    },
+    {
+      "duration": "7",
+      "instance": "v2",
+      "type": "Distance",
+      "value": "21"
+    },
+    {
+      "duration": "10",
+      "instance": "v3",
+      "type": "Distance",
+      "value": "25"
+    }
+  ],
+  "worker": "fresh_process_stdlib_only"
+}

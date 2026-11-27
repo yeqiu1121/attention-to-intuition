@@ -1,0 +1,14 @@
+[
+  {
+    "duration": "7",
+    "instance": "v1"
+  },
+  {
+    "duration": "7",
+    "instance": "v2"
+  },
+  {
+    "duration": "10",
+    "instance": "v3"
+  }
+]

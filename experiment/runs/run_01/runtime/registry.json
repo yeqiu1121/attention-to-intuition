@@ -1,0 +1,66 @@
+{
+  "instances": [
+    {
+      "id": "v1",
+      "type": "Type_1",
+      "value": "2"
+    },
+    {
+      "id": "v2",
+      "type": "Type_1",
+      "value": "3"
+    },
+    {
+      "id": "v3",
+      "type": "Type_1",
+      "value": "5/2"
+    }
+  ],
+  "operations": [
+    {
+      "expression": {
+        "args": [
+          {
+            "var": "t"
+          },
+          {
+            "var": "z"
+          }
+        ],
+        "op": "*"
+      },
+      "inputs": [
+        "Type_1",
+        "Duration"
+      ],
+      "name": "Travel",
+      "output": "Distance"
+    }
+  ],
+  "schema": "intuition.registry.v0.1",
+  "types": [
+    {
+      "base_domain": {
+        "d": ">=0",
+        "number_system": "Q",
+        "t": ">0"
+      },
+      "definition": "X/~; observed instances do not exhaust X/~",
+      "invariant": {
+        "args": [
+          {
+            "var": "d"
+          },
+          {
+            "var": "t"
+          }
+        ],
+        "op": "/"
+      },
+      "kind": "quotient",
+      "name": "Type_1",
+      "relation": "x~y iff invariant(x)=invariant(y)",
+      "representation": "induced exact rational coordinate"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "raw_observation_files_in_runtime": [],
+  "registry_sha256": "8e6a3316b6b81df2e3e86c37b266b0022db7dd767633d7494a46a30ab6c5caab",
+  "runtime_files_before_execution": [
+    "registry.json",
+    "runtime.py",
+    "tasks.json"
+  ],
+  "task_file_has_expected_answers": false,
+  "training_input_exists": false,
+  "validation_input_exists": false
+}

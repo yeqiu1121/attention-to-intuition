@@ -1,0 +1,19 @@
+{
+  "descent": {
+    "count": 48,
+    "passed": true
+  },
+  "reflexivity": {
+    "count": 6,
+    "passed": true
+  },
+  "scope": "finite sample cross-check; not the universal proof",
+  "symmetry": {
+    "count": 36,
+    "passed": true
+  },
+  "transitivity": {
+    "count": 216,
+    "passed": true
+  }
+}

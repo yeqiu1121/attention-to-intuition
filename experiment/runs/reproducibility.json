@@ -1,0 +1,135 @@
+{
+  "all_equal": true,
+  "comparison": "SHA-256 of full deterministic artifacts, not just final answers",
+  "runs": [
+    {
+      "hashes": {
+        "candidates": "d711de16ea3d2f7d6120f1b097c0043cb63b676289ed1f2efc15ce6409d6e733",
+        "discovery": "294fb2d0d516b3b04587657dbee20411dc0af86b968269f6b3a872909730fec5",
+        "formal_certificate": "5982965b616ad4f88c185763cc5ad47de49b38ed3bf7a2e8b8e20e950038d7a3",
+        "registry": "8e6a3316b6b81df2e3e86c37b266b0022db7dd767633d7494a46a30ab6c5caab",
+        "results": "73a5af06d249360b2fcfa04d5a96713f45397c8d2d9b90e982563d43e51bcad0"
+      },
+      "input_files_deleted": true,
+      "run": "run_01",
+      "selected": {
+        "decoder": {
+          "args": [
+            {
+              "var": "t"
+            },
+            {
+              "var": "z"
+            }
+          ],
+          "op": "*"
+        },
+        "decoder_text": "(t*z)",
+        "description_length": 6,
+        "phi": {
+          "args": [
+            {
+              "var": "d"
+            },
+            {
+              "var": "t"
+            }
+          ],
+          "op": "/"
+        },
+        "phi_text": "(d/t)"
+      },
+      "values": [
+        "14",
+        "21",
+        "25"
+      ]
+    },
+    {
+      "hashes": {
+        "candidates": "d711de16ea3d2f7d6120f1b097c0043cb63b676289ed1f2efc15ce6409d6e733",
+        "discovery": "294fb2d0d516b3b04587657dbee20411dc0af86b968269f6b3a872909730fec5",
+        "formal_certificate": "5982965b616ad4f88c185763cc5ad47de49b38ed3bf7a2e8b8e20e950038d7a3",
+        "registry": "8e6a3316b6b81df2e3e86c37b266b0022db7dd767633d7494a46a30ab6c5caab",
+        "results": "73a5af06d249360b2fcfa04d5a96713f45397c8d2d9b90e982563d43e51bcad0"
+      },
+      "input_files_deleted": true,
+      "run": "run_02",
+      "selected": {
+        "decoder": {
+          "args": [
+            {
+              "var": "t"
+            },
+            {
+              "var": "z"
+            }
+          ],
+          "op": "*"
+        },
+        "decoder_text": "(t*z)",
+        "description_length": 6,
+        "phi": {
+          "args": [
+            {
+              "var": "d"
+            },
+            {
+              "var": "t"
+            }
+          ],
+          "op": "/"
+        },
+        "phi_text": "(d/t)"
+      },
+      "values": [
+        "14",
+        "21",
+        "25"
+      ]
+    },
+    {
+      "hashes": {
+        "candidates": "d711de16ea3d2f7d6120f1b097c0043cb63b676289ed1f2efc15ce6409d6e733",
+        "discovery": "294fb2d0d516b3b04587657dbee20411dc0af86b968269f6b3a872909730fec5",
+        "formal_certificate": "5982965b616ad4f88c185763cc5ad47de49b38ed3bf7a2e8b8e20e950038d7a3",
+        "registry": "8e6a3316b6b81df2e3e86c37b266b0022db7dd767633d7494a46a30ab6c5caab",
+        "results": "73a5af06d249360b2fcfa04d5a96713f45397c8d2d9b90e982563d43e51bcad0"
+      },
+      "input_files_deleted": true,
+      "run": "run_03",
+      "selected": {
+        "decoder": {
+          "args": [
+            {
+              "var": "t"
+            },
+            {
+              "var": "z"
+            }
+          ],
+          "op": "*"
+        },
+        "decoder_text": "(t*z)",
+        "description_length": 6,
+        "phi": {
+          "args": [
+            {
+              "var": "d"
+            },
+            {
+              "var": "t"
+            }
+          ],
+          "op": "/"
+        },
+        "phi_text": "(d/t)"
+      },
+      "values": [
+        "14",
+        "21",
+        "25"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "checks": {
+    "equivalence_relation": true,
+    "future_operation_total_on_invariant_image": true,
+    "invariant_total": true,
+    "operation_well_defined_on_quotient": true,
+    "output_nonnegative": true,
+    "quotient_representation_injective": true,
+    "reconstruction_identity": true
+  },
+  "division_obligations": [
+    {
+      "ast_path": "root",
+      "claim": "divisor != 0 on the complete declared domain",
+      "denominator_nonzero": "induction over previously checked AST nodes",
+      "divisor_denominator": {
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "variables": [
+          "d",
+          "t",
+          "tau"
+        ]
+      },
+      "divisor_numerator": {
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "variables": [
+          "d",
+          "t",
+          "tau"
+        ]
+      },
+      "numerator_strict_sign": 1,
+      "passed": true,
+      "phase": "invariant_totality",
+      "rule": "same-sign coefficients and a term with d exponent zero"
+    }
+  ],
+  "domain": {
+    "independent_future_duration": {
+      "tau": "> 0"
+    },
+    "observation": {
+      "d": ">= 0",
+      "t": "> 0"
+    },
+    "scalars": "Q (exact rational numbers)"
+  },
+  "equivalence_certificate": {
+    "reflexivity": "phi(x)=phi(x) by reflexivity of rational equality",
+    "relation": "x ~ y iff phi(x) = phi(y)",
+    "symmetry": "phi(x)=phi(y) implies phi(y)=phi(x) by symmetry of equality",
+    "template": "kernel of a total function into exact rational equality",
+    "transitivity": "phi(x)=phi(y) and phi(y)=phi(w) imply phi(x)=phi(w)"
+  },
+  "identity_certificate": {
+    "claim": "g(phi(d,t),t)=d",
+    "is_zero_polynomial": true,
+    "normalized_cross_difference": {
+      "terms": [],
+      "variables": [
+        "d",
+        "t",
+        "tau"
+      ]
+    },
+    "rule": "nonzero denominators plus exact cross-multiplication"
+  },
+  "inputs": {
+    "decoder": {
+      "args": [
+        {
+          "var": "t"
+        },
+        {
+          "var": "z"
+        }
+      ],
+      "op": "*"
+    },
+    "phi": {
+      "args": [
+        {
+          "var": "d"
+        },
+        {
+          "var": "t"
+        }
+      ],
+      "op": "/"
+    }
+  },
+  "limitations": [
+    "strict-sign denominator reasoning is sound but incomplete; unproved means rejected",
+    "this is not an independently verified theorem prover",
+    "no conclusion about physical generalization follows from rational identities"
+  ],
+  "operation_certificate": {
+    "congruence_tree": {
+      "children": [
+        {
+          "rule": "equal_input",
+          "variable": "t"
+        },
+        {
+          "rule": "equal_input",
+          "variable": "z"
+        }
+      ],
+      "nonzero_denominators": "not required",
+      "operator": "*",
+      "rule": "arithmetic_congruence"
+    },
+    "definition": "Travel([x],tau)=g(phi(x),tau)",
+    "free_variables": [
+      "z",
+      "t"
+    ],
+    "reason": "equal invariant representations and equal duration give equal output",
+    "totality": "independent tau checked above, rather than only observed t"
+  },
+  "output_nonnegative_certificate": {
+    "claim": "g(phi(d,t),tau) >= 0 over the complete independent-future domain",
+    "denominator_strict_sign": 1,
+    "oriented_numerator": {
+      "terms": [
+        {
+          "coefficient": "1",
+          "powers": [
+            1,
+            0,
+            1
+          ]
+        }
+      ],
+      "variables": [
+        "d",
+        "t",
+        "tau"
+      ]
+    },
+    "passed": true,
+    "rule": "strict denominator sign and all oriented numerator coefficients nonnegative",
+    "zero_numerator_allowed": true
+  },
+  "quotient_certificate": {
+    "definition": "Type_1 = X / kernel(phi)",
+    "injective": "phi(x)=phi(y) implies [x]=[y] by definition of kernel(phi)",
+    "representation": "[x] maps to phi(x), with codomain Im(phi)",
+    "surjective_onto_image": "each element of Im(phi) has a preimage in X",
+    "well_defined": "x ~ y implies phi(x)=phi(y) by definition"
+  },
+  "rational_polynomials": {
+    "future_operation": {
+      "denominator": {
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "variables": [
+          "d",
+          "t",
+          "tau"
+        ]
+      },
+      "numerator": {
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              0,
+              1
+            ]
+          }
+        ],
+        "variables": [
+          "d",
+          "t",
+          "tau"
+        ]
+      }
+    },
+    "invariant": {
+      "denominator": {
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "variables": [
+          "d",
+          "t",
+          "tau"
+        ]
+      },
+      "numerator": {
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "variables": [
+          "d",
+          "t",
+          "tau"
+        ]
+      }
+    },
+    "reconstruction": {
+      "denominator": {
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "variables": [
+          "d",
+          "t",
+          "tau"
+        ]
+      },
+      "numerator": {
+        "terms": [
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              1,
+              0
+            ]
+          }
+        ],
+        "variables": [
+          "d",
+          "t",
+          "tau"
+        ]
+      }
+    }
+  },
+  "schema_version": 1,
+  "status": "proved_by_exact_checker",
+  "trusted_basis": [
+    "Python integer and Fraction arithmetic",
+    "this polynomial implementation and AST interpreter agreement",
+    "ordered-field sign rules on the declared rational domain",
+    "equality axioms and the generic kernel/quotient construction"
+  ]
+}

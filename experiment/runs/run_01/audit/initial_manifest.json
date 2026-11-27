@@ -1,0 +1,44 @@
+{
+  "decoder_grammar": {
+    "leaves": [
+      "z",
+      "t"
+    ],
+    "same_binary_ops_and_bound": true
+  },
+  "fixture_sha256": "d97d8359bf4d535b6d6757c4d73a185a4105f7b4f5eac53f9db9118f71795b44",
+  "grammar": {
+    "binary_ops": [
+      "+",
+      "-",
+      "*",
+      "/"
+    ],
+    "constant_leaves": [],
+    "deduplication": "none",
+    "leaves": [
+      "d",
+      "t"
+    ],
+    "max_nodes": 5
+  },
+  "initial_types": [
+    "Distance",
+    "Duration"
+  ],
+  "prediction_target": "reconstruct distance from coordinate and duration",
+  "registered_types_before": [],
+  "source_hashes": {
+    "intuition/__init__.py": "2a095e395781782503642e602574d1511ae7dd23f8d26787641565b9b4a5cee5",
+    "intuition/discovery.py": "6cf8247a47ca756f6756f80e175c7c0f6efabc74411c0dff0074b107b4447970",
+    "intuition/expressions.py": "daffba72026410d155654e730d3a7776af2e77bc87905f9473cce94b3b5405d6",
+    "intuition/pipeline.py": "e24704435150919f07424615a5791d6f8442b00bcb922c41377b19c823f72302",
+    "intuition/proof.py": "6ca981374c4b4edb3e87f2c47edb4c092b4611c1a84b6fc3546407c29d60faf7",
+    "intuition/runtime.py": "e3e20a6b2861c875c3d98eb3914cea860d658827fda4b9c74c2b01e4b3068882",
+    "run_all.py": "1438343c79dddf79672dee9c6b1d9654f849cddca3e4019ff07f3835fa54e209",
+    "tests/__init__.py": "81a2dfef4600c41abc80f34102147f00304c63e3493e569dbc9c4f31f359730a",
+    "tests/test_core.py": "7d54f814200d344cef72b4c2a4bdc4247a558778c9af82eb3edc2c9cac422659",
+    "tests/test_integration.py": "07c2103f2f5a9945c23fbfc679e8f547d0c3521efe179ad55100dc0bb93eb30f"
+  },
+  "supplied_domain": "exact rationals d>=0,t>0; future duration>0"
+}

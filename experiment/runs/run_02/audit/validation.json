@@ -1,0 +1,36 @@
+{
+  "details": [
+    {
+      "coordinate": "2",
+      "d": "10",
+      "id": "h1",
+      "known_class": true,
+      "passed": true,
+      "prediction": "10",
+      "t": "5"
+    },
+    {
+      "coordinate": "3",
+      "d": "15",
+      "id": "h2",
+      "known_class": true,
+      "passed": true,
+      "prediction": "15",
+      "t": "5"
+    },
+    {
+      "coordinate": "5/2",
+      "d": "25",
+      "id": "h3",
+      "known_class": true,
+      "passed": true,
+      "prediction": "25",
+      "t": "10"
+    }
+  ],
+  "passed": true,
+  "registry_sha256_after": "8e6a3316b6b81df2e3e86c37b266b0022db7dd767633d7494a46a30ab6c5caab",
+  "registry_sha256_before": "8e6a3316b6b81df2e3e86c37b266b0022db7dd767633d7494a46a30ab6c5caab",
+  "reselection_allowed": false,
+  "selection_frozen": true
+}
